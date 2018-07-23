@@ -7,9 +7,9 @@ $text_color: if($variant == 'light', #212121, white);
 $bg_color: if($variant == 'light', #cecece, #393f3f);
 $fg_color: if($variant == 'light', #3c3c3c, #eeeeec);
 
-$selected_bg_color_base: #398ee7;
-$link_color_base: #2d71b8;
-$sidebar_bg_color_base: #dae0e6;
+$selected_bg_color_base: #1c6203;
+$link_color_base: #3d48d9;
+$sidebar_bg_color_base: #f6fff3;
 
 $selected_fg_color: #ffffff;
 $selected_bg_color: if($variant == 'light', $selected_bg_color_base, darken($selected_bg_color_base,20%));
