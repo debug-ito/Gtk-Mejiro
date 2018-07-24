@@ -250,7 +250,7 @@ entry {
     padding-right: 4px;
     border: 1px solid;
     border-radius: 3px;
-    transition: all 200ms $ease-out-quad;
+    transition: all 0ms linear;
 
     @include entry(normal);
 
@@ -465,7 +465,6 @@ button {
 
       &:hover {
         transition: $button_transition;
-        transition-duration: 500ms;
 
         &:active { transition: $button_transition; }
       }
@@ -480,7 +479,6 @@ button {
     &:checked {
       @include button(active);
 
-      transition-duration: 50ms;
     }
 
     &:backdrop {
