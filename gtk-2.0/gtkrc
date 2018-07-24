@@ -114,7 +114,6 @@ style "default"
 		colorize_scrollbar  = TRUE
 		comboboxstyle       = 0                 # 0 = normal combobox, 1 = colorized combobox below arrow
 		contrast            = 0.4               # 0.8 for less contrast, more than 1.0 for more contrast on borders
-		default_button_color = mix (0.2, shade(0.9,@base_color), shade (0.9, @selected_bg_color))
 		expanderstyle	    = 0
 		focus_color         = mix (0.1, @bg_color, shade (0.7, @selected_bg_color))
 		focusstyle	    = 3
@@ -227,11 +226,10 @@ style "entry" = "wider"
 
 style "button" = "wider"
 {
-	bg[NORMAL]        = shade (1.02, @bg_color)
-	bg[PRELIGHT]      = shade (1.07, @bg_color)
-	bg[ACTIVE]        = shade (0.85, @bg_color)
-	bg[SELECTED]      = shade (0.5, @selected_bg_color)
-	bg[INSENSITIVE]   = shade (0.95, @bg_color)
+	bg[NORMAL]        = shade (1.0, @bg_color)
+	bg[PRELIGHT]      = shade (1.2, @selected_bg_color)
+	bg[ACTIVE]        = shade (.9, @bg_color)
+        fg[PRELIGHT]      = @selected_fg_color
 
 	engine "murrine"
 	{
