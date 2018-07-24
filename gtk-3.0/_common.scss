@@ -2343,11 +2343,11 @@ scrollbar {
 
   // slider
   slider {
-    min-width: 7px;
-    min-height: 7px;
+    min-width: 13px;
+    min-height: 13px;
     margin: 3px;
     border: 1px solid darken($bg_color, 30%);
-    border-radius: 10px;
+    border-radius: 0px;
     background-clip: padding-box;
     background-image: linear-gradient(to right,
                                       lighten($scrollbar_slider_color, 5%),
