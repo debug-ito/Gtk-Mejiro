@@ -913,6 +913,7 @@ style "xfwm-tabwin-button"
 	fg[PRELIGHT]	= @fg_color
 	fg[ACTIVE]	= @selected_fg_color
 	font_name = "bold"
+        ythickness = 0
 }
 
 style "xfdesktop-icon-view"
