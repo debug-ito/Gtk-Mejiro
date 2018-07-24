@@ -173,7 +173,7 @@
   }
 }
 
-@mixin button($t, $c:$bg_color, $tc:$fg_color, $edge: none) {
+@mixin button($t, $c: EMPTY, $tc: EMPTY, $edge: none) {
 //
 // Button drawing function
 //
@@ -188,6 +188,12 @@
 // backdrop, backdrop-active, backdrop-insensitive, backdrop-insensitive-active,
 // osd, osd-hover, osd-active, osd-insensitive, osd-backdrop, undecorated
 //
+  @if $c == EMPTY {
+      $c: if($t == hover or $t == active or $t == insensitive-active, $selected_bg_color, $bg_color);
+  }
+  @if $tc == EMPTY {
+      $tc: if($t == hover or $t == active or $t == insensitive-active, $selected_fg_color, $fg_color);
+  }
 
   $_hilight_color: _button_hilight_color($c);
   $_button_edge: if($edge == none, none, _widget_edge($edge));

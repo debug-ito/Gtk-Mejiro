@@ -472,7 +472,7 @@ button {
     }
 
     &:hover {
-      @include button(hover, $selected_bg_color, $selected_fg_color);
+      @include button(hover);
       -gtk-icon-effect: highlight;
     }
 
