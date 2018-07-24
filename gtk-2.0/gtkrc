@@ -885,14 +885,9 @@ style "xfwm-tabwin"
 	Xfwm4TabwinWidget::alpha = 0.8
 	Xfwm4TabwinWidget::border-radius = 10
 
-	bg[NORMAL]	= shade (0.35, @bg_color_dark)
-	bg[ACTIVE]	= shade (0.65, @selected_bg_color)
-	bg[PRELIGHT]	= shade (0.85, @selected_bg_color)
-	bg[SELECTED]	= shade (0.45, @bg_color_dark)
-
-	fg[NORMAL]	= shade (0.8, @base_color)
-	fg[ACTIVE]	= @base_color
-	fg[PRELIGHT]	= @base_color
+	bg[NORMAL]	= @bg_color  ## the background of the whole switcher.
+	bg[SELECTED]	= shade(0.1, @bg_color)  ## the color for outer-most border.
+	fg[NORMAL]	= @fg_color
 
 	engine "murrine" {
 		roundness	    = 6
@@ -910,6 +905,13 @@ style "xfwm-tabwin"
 
 style "xfwm-tabwin-button"
 {
+        bg[SELECTED]      = shade(0.8, @selected_bg_color) ## the cursor for key
+	bg[PRELIGHT]      = shade(1.8, @bg_color) ## the cursor for mouse pointer.
+	bg[ACTIVE]        = shade(1.4, @selected_bg_color) ## the cursor when mouse and key point to the same window.
+        
+        fg[SELECTED]    = @selected_fg_color
+	fg[PRELIGHT]	= @fg_color
+	fg[ACTIVE]	= @selected_fg_color
 	font_name = "bold"
 }
 
