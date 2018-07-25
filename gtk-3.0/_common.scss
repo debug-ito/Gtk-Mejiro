@@ -1328,8 +1328,7 @@ searchbar,
  ***************/
 %titlebar,
 headerbar {
-  padding: 0 5px;
-  min-height: 38px;
+  padding: 0;
   border-width: 0 0 1px;
   border-style: solid;
   border-color: $borders_color;
@@ -1518,7 +1517,7 @@ headerbar {
   spinbutton,
   separator,
   button {
-    margin-top: 3px;
+    margin-top: 0;
     margin-bottom: 3px;
   }
   button.titlebutton image {
@@ -4240,6 +4239,8 @@ button.titlebutton {
   @extend %button_basic.flat;
 
   @include _button_text_shadow;
+
+  min-height: 36px;
 
   &.close, &.maximize, &.minimize {
     color: transparent;
