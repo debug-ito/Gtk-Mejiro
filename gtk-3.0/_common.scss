@@ -40,6 +40,11 @@ $button_transition: all 0ms linear;
   -gtk-secondary-caret-color: $selected_bg_color
 }
 
+*:selected,
+*:selected:focus {
+    background-color: $selected_bg_color;
+    color: $selected_fg_color;
+}
 
 /***************
  * Base States *
