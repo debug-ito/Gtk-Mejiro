@@ -228,19 +228,20 @@ style "button" = "wider"
 {
 	bg[NORMAL]        = shade (1.0, @bg_color)
 	bg[PRELIGHT]      = shade (1.2, @selected_bg_color)
-	bg[ACTIVE]        = shade (.9, @bg_color)
+	bg[ACTIVE]        = shade (.9, @selected_bg_color)
         fg[PRELIGHT]      = @selected_fg_color
+
 
 	engine "murrine"
 	{
-		contrast            = 0.9
-		highlight_shade     = 1.0
-		lightborder_shade   = 1.2
-		gradient_shades     = {1.05,1.0,0.97,0.97}
-		border_shades       = { 1.1, 0.9 }
-		shadow_shades       = {1.0,1.0}
-		reliefstyle         = 0
-		roundness	    = 2
+ 		contrast            = 0.9
+ 		highlight_shade     = 1.0
+ 		lightborder_shade   = 1.2
+ 		gradient_shades     = {1.05,1.0,0.97,0.97}
+ 		border_shades       = { 1.1, 0.9 }
+ 		shadow_shades       = {1.0,1.0}
+ 		reliefstyle         = 0
+ 		roundness	    = 2
 	}
 }
 
