@@ -230,6 +230,7 @@ style "button" = "wider"
 	bg[PRELIGHT]      = shade (1.2, @selected_bg_color)
 	bg[ACTIVE]        = shade (.9, @selected_bg_color)
         fg[PRELIGHT]      = @selected_fg_color
+        fg[ACTIVE] = @selected_fg_color
 
 
 	engine "murrine"
@@ -1029,6 +1030,7 @@ widget_class "*<GtkNotebook>*<GtkToolbar>"	style "notebook-bg"
 widget_class "*<GtkNotebook>*<GtkLabel>"		style "notebook-bg"
 
 widget_class "*<GtkButton>"      style "button"
+widget_class "*<GtkButton>*<GtkLabel>" style "button"
 widget_class "*<GtkNotebook>"    style "notebook"
 widget_class "*<GtkStatusbar>*"  style "statusbar"
 
