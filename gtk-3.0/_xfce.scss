@@ -38,7 +38,7 @@ $variant: 'light';
                                               shade($selected_bg_color, 0.88),
                                               shade($selected_bg_color, 0.85)
                                               );
-            color: $panel_fg_color;
+            color: $selected_fg_color;
             box-shadow: inset 0 -1px gtkalpha(white, 0.0),
                         inset 1px 0 gtkalpha(white, 0.15),
                         inset -1px 0 gtkalpha(white, 0.15),
