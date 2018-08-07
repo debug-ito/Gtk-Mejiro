@@ -483,7 +483,8 @@ button {
     &:active,
     &:checked {
       @include button(active);
-
+      padding-top: 2px;
+      padding-bottom: 0px;
     }
 
     &:backdrop {
