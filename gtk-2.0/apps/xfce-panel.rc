@@ -6,10 +6,7 @@ style "theme-panel"
 
 style "theme-panel-text"
 {
-## 	engine "murrine" {
-## 		textstyle	= 1
-## 		text_shade	= 0.2
-## 	}
+
 }
 
 style "panel-entry"
