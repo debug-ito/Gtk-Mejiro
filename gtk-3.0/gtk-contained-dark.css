@@ -2751,6 +2751,9 @@ checkbutton.text-button, radiobutton.text-button {
     margin-left: 4px; }
   checkbutton.text-button label:not(:only-child):last-child, radiobutton.text-button label:not(:only-child):last-child {
     margin-right: 4px; }
+  checkbutton.text-button:hover, radiobutton.text-button:hover {
+    background-color: black;
+    color: #ffffff; }
 
 check,
 radio {

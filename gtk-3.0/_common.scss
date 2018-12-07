@@ -2639,6 +2639,11 @@ checkbutton.text-button, radiobutton.text-button {
     &:first-child { margin-left: 4px; }
     &:last-child { margin-right: 4px; }
   }
+
+  &:hover {
+      background-color: $selected_bg_color;
+      color: $selected_fg_color;
+  }
 }
 
 check,
