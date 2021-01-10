@@ -1,7 +1,5 @@
 # Gtk-Mejiro
 
-**This project is work in progress**
-
 Gtk-Mejiro is a Gtk2/3 and xfwm4 theme based on "Greybird" and "Default-4.6".
 
 Gtk-Mejiro is the successor of [Gtk-Uguiss](https://github.com/debug-ito/Gtk-Uguiss). Because it was very difficult to keep up with changes of Gtk3, now Gtk-Mejiro is based on Greybird theme.
